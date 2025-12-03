@@ -1,8 +1,11 @@
-# Restaurant Booking Voice Agent 🎙️
+# Restaurant Booking Voice Agent
 
 A full-stack voice assistant for restaurant reservations. It uses AI to understand natural language, checks real-time weather for seating suggestions, and sends SMS confirmations.
 
 **Live Demo Video:** [Click Here](https://youtu.be/MSq1deXeAS0)
+
+**Twilio_SMS:** [Click Here](Twilio_Texts.jpg)
+
 > **🚀 Highlights**
 >
 > **✨ Bonus Features Implemented:**
