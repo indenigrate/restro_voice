@@ -3,6 +3,19 @@
 A full-stack voice assistant for restaurant reservations. It uses AI to understand natural language, checks real-time weather for seating suggestions, and sends SMS confirmations.
 
 **Live Demo Video:** [Click Here](https://youtu.be/MSq1deXeAS0)
+> **🚀 Highlights**
+>
+> **✨ Bonus Features Implemented:**
+> * **Admin Dashboard:** A functional React dashboard to view, search, and export booking data (Bonus #5).
+> * **SMS Confirmation:** Integrated **Twilio** to send instant text receipts to users (Bonus #4).
+> * **Natural Language Processing:** Uses **Google Gemini** for intent classification and entity extraction (Bonus #1).
+> * **Smart Seating:** Automatically suggests "Indoor" vs "Outdoor" based on real-time rain forecasts.
+>
+> **🛡️ Edge Case Handling:**
+> * **Time Travel Prevention:** Rejects bookings for dates in the past.
+> * **Forecast Limits:** Restricts bookings to a 5-day window to ensure weather data accuracy.
+> * **Missing Data Fallback:** Interactive AI prompts if the user forgets to mention the time or date.
+> * **Contact Fallback:** Uses a default environment variable phone number for testing if none is provided in voice.
 
 ## ⚡ Features
 - **Voice Interaction:** Browser-native Speech-to-Text & Text-to-Speech (Web Speech API).
@@ -34,7 +47,7 @@ cd restaurant-voice-agent
 npm install
 
 # Install Frontend Deps
-cd client
+cd frontend
 npm install
 ```
 
@@ -71,7 +84,7 @@ docker-compose up -d
 npx nodemon src/index.js
 ```
 
-**Step 3: Start Frontend** (Client terminal)
+**Step 3: Start Frontend** (Frontend terminal)
 
 ```bash
 cd client
