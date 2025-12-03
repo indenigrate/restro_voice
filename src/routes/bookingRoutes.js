@@ -4,6 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 const Booking = require('../models/Booking');
 const { getWeatherForecast } = require('../services/weatherService');
 const { extractBookingDetails } = require('../services/geminiService');
+const { sendSMS } = require('../services/notificationService');
 
 router.post('/', async (req, res) => {
   try {
@@ -88,6 +89,7 @@ router.post('/', async (req, res) => {
     const newBooking = new Booking({
       bookingId: uuidv4(),
       customerName: details.customerName || "Guest",
+      customerPhone: process.env.MY_PHONE_NUMBER,
       numberOfGuests: details.numberOfGuests,
       bookingDate: bookingDateObj,
       bookingTime: details.bookingTime,
@@ -100,6 +102,7 @@ router.post('/', async (req, res) => {
 
     await newBooking.save();
 
+    sendSMS(newBooking)
     // 6. Success Response
     res.status(201).json({
       success: true,

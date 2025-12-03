@@ -19,6 +19,7 @@ const extractBookingDetails = async (userText) => {
     
     Required Fields:
     - customerName (String)
+    - customerPhone (String or null)
     - numberOfGuests (Number)
     - bookingDate (YYYY-MM-DD)
     - bookingTime (HH:MM 24hr format)

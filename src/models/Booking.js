@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bookingSchema = new mongoose.Schema({
   bookingId: { type: String, required: true, unique: true },
   customerName: { type: String, required: true },
+  customerPhone: { type: String },
   numberOfGuests: { type: Number, required: true },
   bookingDate: { type: Date, required: true }, // Stores full date object
   bookingTime: { type: String, required: true }, // e.g., "19:00"
