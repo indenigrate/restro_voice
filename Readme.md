@@ -94,7 +94,7 @@ cd client
 npm run dev
 ```
 
-Visit `http://localhost:5173` in Chrome.
+Visit `http://localhost:5173` in Chrome(Does not support Firefox currently due to Web Speech API Limitations).
 
 ## 🧠 How It Works
 
