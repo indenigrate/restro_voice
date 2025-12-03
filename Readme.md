@@ -2,7 +2,7 @@
 
 A full-stack voice assistant for restaurant reservations. It uses AI to understand natural language, checks real-time weather for seating suggestions, and sends SMS confirmations.
 
-**Live Demo Video:** [Link to your screen recording]
+**Live Demo Video:** [Click Here](https://youtu.be/MSq1deXeAS0)
 
 ## ⚡ Features
 - **Voice Interaction:** Browser-native Speech-to-Text & Text-to-Speech (Web Speech API).
